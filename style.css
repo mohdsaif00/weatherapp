@@ -1,0 +1,121 @@
+/* Reset padding and margin for all elements and set a consistent font */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box; 
+}
+
+
+/* Main card container for the weather info */
+.card {
+    width: 90%;
+    max-width: 470px;
+    background: linear-gradient(120deg, black, pink); 
+    color: #fff;
+    margin: 100px auto 0; 
+    border-radius: 20px;
+    padding: 40px 35px; 
+    text-align: center;
+    opacity: 0.6;
+}
+
+/* Container for search input and button */
+.searchbox {
+    width: 100%; 
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+
+/* Styling for the input box */
+.searchbox input {
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    color: #555;
+    padding: 10px 25px; 
+    height: 60px;
+    border-radius: 30px;
+    flex: 1;
+    margin-left: 16px;
+    font-size: 18px; 
+}
+
+/* Styling for the search button */
+.searchbox button {
+    border: 0; 
+    outline: 0; 
+    background: #ebfffc;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+/* Search button icon */
+.searchbox button img {
+    width: 16px;
+}
+
+/* Icon that represents the current weather */
+.weather-icon {
+    width: 170px;
+    margin-top: 50px;
+}
+
+/* Main temperature display */
+.weather h1 {
+    font-size: 80px;
+    font-weight: 500;
+}
+
+/* City name display */
+.weather h2 {
+    font-size: 45px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+
+/* Details container for humidity, wind, etc. */
+.details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 50px;
+}
+
+/* Individual column (e.g., humidity, wind) */
+.col {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+/* Icon inside each detail column */
+.col img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+/* Additional styling for humidity and wind details */
+.humidity .wind {
+    font-size: 80px;
+    margin-top: -6px;
+}
+
+/* Hide weather details by default */
+.weather {
+    display: none;
+}
+
+/* Styling for error message */
+.error {
+    text-align: start;
+    margin-left: 10px;
+    font-size: 20px;
+    margin-top: 20px;
+    display: none;
+}
